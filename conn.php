@@ -5,7 +5,7 @@ function pdo_get_connection(){
     $password = "";
     try {
         // đặt lỗi PDO
-        $conn = new PDO("mysql:host=$servername;dbname=php1", $username, $password);
+        $conn = new PDO("mysql:host=$servername;dbname=lab6", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
     } catch(PDOException $e) {  
