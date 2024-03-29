@@ -167,11 +167,6 @@ function hienThiChiTietTaiKhoan()
     require_once "client/view/ChiTietTaiKhoan.php";
 }
 
-function hienThiGioHang()
-{
-    require_once "client/view/GioHang.php";
-}
-
 function dangXuat()
 {
     session_destroy();
