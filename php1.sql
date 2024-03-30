@@ -44,6 +44,8 @@ ALTER TABLE `items`
 ALTER TABLE `user`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
+INSERT INTO `user` (username, password, email, image_url, role) VALUES ('1', '1', 'duongbhph41427@fpt.edu.vn', 'https://via.placeholder.com/640x480.png/00ffee?text=hello', 1);
+
 ALTER TABLE `items`
   ADD CONSTRAINT `items_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`);
 COMMIT;
