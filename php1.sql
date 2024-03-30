@@ -11,7 +11,7 @@ CREATE TABLE `categories` (
 CREATE TABLE `items` (
   `id` int NOT NULL,
   `name` varchar(255) NOT NULL,
-  `price` decimal(10,2) NOT NULL,
+  `price` decimal(10,3) NOT NULL,
   `category_id` int DEFAULT NULL,
   `image_url` varchar(255) NOT NULL
 );
